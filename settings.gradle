@@ -1,0 +1,2 @@
+include ':app', ':ch1_mvvm', ':ch_viewmodelfactory', ':ch2_viewmodelfactory'
+rootProject.name='App'

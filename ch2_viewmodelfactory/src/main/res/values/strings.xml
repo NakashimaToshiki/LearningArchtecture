@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ch2_ViewModelFactory</string>
+    <string name="title">タイトル</string>
+    <string name="description">説明</string>
+    <string name="display">表示</string>
+    <string name="edit">編集</string>
+</resources>
