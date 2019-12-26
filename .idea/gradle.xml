@@ -11,6 +11,9 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/ch1_mvvm" />
             <option value="$PROJECT_DIR$/ch2_viewmodelfactory" />
+            <option value="$PROJECT_DIR$/ch3_recyclerview" />
+            <option value="$PROJECT_DIR$/ch3_repository" />
+            <option value="$PROJECT_DIR$/ch4_sample" />
             <option value="$PROJECT_DIR$/ch_viewmodelfactory" />
           </set>
         </option>
