@@ -15,7 +15,7 @@ ListViewはAdapterViewというViewを再利用するクラス継承している
 
 各クラスの説明
 
-## <ListAdapterの実装>
+## ListAdapterの実装
 
 リサイクラビューを実装する上で、以下の抽象クラスを継承した実装クラスを作る必要がある
 
@@ -24,13 +24,13 @@ ListViewはAdapterViewというViewを再利用するクラス継承している
 
 詳細はTasksAdapterを参照
 
-## <findViewByIdによるUI呼び出しを避けたい>
+## findViewByIdによるUI呼び出しを避けたい
 
 findViewByIdは低速なので、キャッシュからUI呼び出しをしたほうが高速
 
 詳細はTasksAdapter.ViewHolderを参照
 
-## <resファイル上でコレクションとUIをデータバインドしたい>
+## resファイル上でコレクションとUIをデータバインドしたい
 
 @BindingAdapter("app:items")
 
