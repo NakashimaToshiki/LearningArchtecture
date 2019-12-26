@@ -1,4 +1,6 @@
-# リサイクラビュー
+# Ch3_recyclerview
+
+
 
 # リサイクラビューとは
 
@@ -7,13 +9,11 @@ ListViewよりも柔軟な表現をすることができるビューのこと。
 この手法を知ったとき、ListViewで大量にデータを表示しようとすると、Viewが大量に生成されて処理が重くなるので、リサイクラビューとはその対策手法だと勘違いしてた。
 ListViewはAdapterViewというViewを再利用するクラス継承しているので、ちゃんと再利用してる様子。
 
-# サンプルアプリ
-
 # 備忘録
 
 各クラスの説明
 
-## ListAdapterの実装
+## <ListAdapterの実装>
 
 リサイクラビューを実装する上で、以下の抽象クラスを継承した実装クラスを作る必要がある
 
@@ -22,13 +22,13 @@ ListViewはAdapterViewというViewを再利用するクラス継承している
 
 詳細はTasksAdapterを参照
 
-## findViewByIdによるUI呼び出しを避けたい
+## <findViewByIdによるUI呼び出しを避けたい>
 
 findViewByIdは低速なので、キャッシュからUI呼び出しをしたほうが高速
 
 詳細はTasksAdapter.ViewHolderを参照
 
-## resファイル上でコレクションとUIをデータバインドしたい
+## <resファイル上でコレクションとUIをデータバインドしたい>
 
 @BindingAdapter("app:items")
 
