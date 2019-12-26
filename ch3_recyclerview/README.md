@@ -1,6 +1,6 @@
 # Ch3_recyclerview
 
-
+![play.gif](https://github.com/nebusokuhibari/LearningArchtecture/blob/master/ch3_recyclerview/play.gif?raw=true)
 
 # リサイクラビューとは
 
