@@ -33,3 +33,4 @@
 　　　　：
 
 - ch?_unittest・・・どこかでUnitテストを実装
+- EspressoIdling・・・非同期なテスト
