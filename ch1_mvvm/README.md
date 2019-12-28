@@ -2,7 +2,7 @@
 
 サンプルアプリ
 
-![play.gif](https://github.com/nebusokuhibari/LearningArchtecture/blob/master/ch4_mvvm/play.gif?raw=true)
+![play.gif](https://github.com/nebusokuhibari/LearningArchtecture/blob/master/ch1_mvvm/play.gif?raw=true)
 
 変更フラグメントのデータを変更すると
 表示フラグメントにデータが反映される
@@ -38,7 +38,3 @@ ObservableFieldもしくは@Bindable属性を付ける方法がありました�
 違いが見えにくくてハマってた。ないとユーザーからの値変更がViewModelの値に反映されません。
 
 詳しくはレイアウトのfragment_task_edit.xmlを参照
-
-# 個人的メモ
-
-MVVMパターンの情報は他にもあるので、
