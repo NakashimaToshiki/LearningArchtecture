@@ -9,25 +9,23 @@
 - ch1_mvvm・・・基本的なMVVMパターン
 - ch2_viewmodelfactory・・・FactoryパターンでViewModelをインスタンスする
 - ch3_recyclerview・・・Taskのコレクションをリサイクラビューで表示する
+- ch4_pubsub・・・画像
 
 # Todo
 
 ## 近日のスケジュール
 
-- ch3_recyclerviewの説明文書
+- ch1_mvvmのREADME作成
+- ch2_viewmodelfactoryのREADME作成
 
 ## 全体のスケジュール
 
-- ch4_recyclerview_strikethrough・・・ch3でCompleteタスクに取り消し線を追加するロジック
-- ch5_livedatawrapper・・・ModelViewにクリックイベントを登録できるようにする
-- ch1_mvvm・・・全体的に作り直したい
-- ch2_viewmodelfactory・・・同上
+- ch?_repository・・・Repositoryパターンでコレクションの追加/削除
 
 　　　　：
 　　　　：
 
 - ch?_room・・・ROOMライブラリを使ってDMの構築
-- ch?_repository・・・Repositoryパターン
 
 　　　　：
 　　　　：
