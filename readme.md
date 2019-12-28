@@ -9,7 +9,7 @@
 - ch1_mvvm・・・基本的なMVVMパターン
 - ch2_viewmodelfactory・・・FactoryパターンでViewModelをインスタンスする
 - ch3_recyclerview・・・Taskのコレクションをリサイクラビューで表示する
-- ch4_pubsub・・・画像
+- ch4_pubsub・・・Pub/Subパターンでスナックバーを表示
 
 # Todo
 
@@ -20,7 +20,7 @@
 
 ## 全体のスケジュール
 
-- ch?_repository・・・Repositoryパターンでコレクションの追加/削除
+- ch5_repository・・・Repositoryパターンでコレクションの追加/削除
 
 　　　　：
 　　　　：
