@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ch5_repository</string>
+    <string name="task_marked_complete">Task marked complete</string>
+    <string name="task_marked_active">Task marked active</string>
+</resources>

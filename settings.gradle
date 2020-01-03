@@ -1,2 +1,2 @@
-include ':ch1_mvvm', ':ch2_viewmodelfactory', ':ch3_recyclerview', ':ch4_pubsub'
+include ':ch01_mvvm', ':ch02_viewmodelfactory', ':ch03_recyclerview', ':ch04_pubsub', ':ch10_room', ':ch05_toolbar', ':ch07_databinding', ':ch08_repository', ':ch06_fontstyle'
 rootProject.name='App'

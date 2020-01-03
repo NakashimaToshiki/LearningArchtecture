@@ -6,29 +6,26 @@
 
 # 各サンプルの概要
 
-- ch1_mvvm・・・基本的なMVVMパターン
-- ch2_viewmodelfactory・・・FactoryパターンでViewModelをインスタンスする
-- ch3_recyclerview・・・Taskのコレクションをリサイクラビューで表示する
-- ch4_pubsub・・・Pub/Subパターンでスナックバーを表示
+だいたい完成プロジェクト一覧
+
+- ch01_mvvm・・・基本的なMVVMパターン
+- ch02_viewmodelfactory・・・FactoryパターンでViewModelをインスタンスする
+- ch03_recyclerview・・・Taskのコレクションをリサイクラビューで表示する
+- ch04_pubsub・・・Pub/Subパターンでスナックバーを表示
+- ch05_toolbar・・・ツールバーの作成
+- ch06_fontstyle・・・スタイルとフォントの作成
 
 # Todo
 
-## 近日のスケジュール
+未完成プロジェクト一覧
 
-- ch1_mvvmのREADME作成
-- ch2_viewmodelfactoryのREADME作成
-
-## 全体のスケジュール
-
-- ch5_repository・・・Repositoryパターンでコレクションの追加/削除
-
+- ch07_databinding・・・レイアウトxml上でViewやContextCompatをインポートする
+- ch08_repository・・・コレクションの追加／削除／抽出
+- ch09_navigation・・・ナビゲーション
+- ch10_room・・・ROOMライブラリを使ってDMの構築
 　　　　：
 　　　　：
-
-- ch?_room・・・ROOMライブラリを使ってDMの構築
-
-　　　　：
-　　　　：
-
 - ch?_unittest・・・どこかでUnitテストを実装
-- EspressoIdling・・・非同期なテスト
+- ch?_EspressoIdling・・・非同期なテスト
+
+

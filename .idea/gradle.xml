@@ -8,10 +8,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/ch1_mvvm" />
-            <option value="$PROJECT_DIR$/ch2_viewmodelfactory" />
-            <option value="$PROJECT_DIR$/ch3_recyclerview" />
-            <option value="$PROJECT_DIR$/ch4_pubsub" />
+            <option value="$PROJECT_DIR$/ch01_mvvm" />
+            <option value="$PROJECT_DIR$/ch02_viewmodelfactory" />
+            <option value="$PROJECT_DIR$/ch03_recyclerview" />
+            <option value="$PROJECT_DIR$/ch04_pubsub" />
+            <option value="$PROJECT_DIR$/ch05_toolbar" />
+            <option value="$PROJECT_DIR$/ch06_fontstyle" />
+            <option value="$PROJECT_DIR$/ch07_databinding" />
+            <option value="$PROJECT_DIR$/ch08_repository" />
+            <option value="$PROJECT_DIR$/ch10_room" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
