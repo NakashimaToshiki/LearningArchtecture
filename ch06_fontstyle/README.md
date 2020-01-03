@@ -1,28 +1,14 @@
 # FontStyle
 
-サンプルアプリ
-
 ![play.png](./play.png?raw=true)
 
-# 概要
-
-
+ツールバーの色を調整しただけ
 
 # 備忘録
 
-## 1. デフォルトのアクションバーの無効化
+フォントの導入手順をメモ
 
-無効化していないとエラー「This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_SUPPORT_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.」がでる
-
-アプリマニュフェストでappcompat の NoActionBar テーマのいずれかを使用するように <application> 要素を設定します。
-
-    <application
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        />
-
-初期プロジェクトだとthemeの値がstyle.xmlを参照しているので、ここをstyle.xmlを修正する
-
-## 2. fontファイルの生成
+## 1. fontファイルの生成
 
 fontフォルダを生成してxmlファイル(opensans_font.xml)を生成する
 
@@ -39,7 +25,7 @@ fontフォルダを生成してxmlファイル(opensans_font.xml)を生成する
 
 fontフォルダにフォントファイル（.ttf)を作成しておく必要があり。opensans_regular.ttf,opensans_semibold.ttfというファイルが必要。そのままBluePrintにあったフォントファイルを頂戴した。
 
-## 3. styles.xmlの修正
+## 2. styles.xmlの修正
 
 ファイルの中身はこんな感じ
 
@@ -69,8 +55,10 @@ fontフォルダにフォントファイル（.ttf)を作成しておく必要�
         <style name="Toolbar" parent="ThemeOverlay.AppCompat.Light" />
     </resources>
 
-マテリアルデザインというGoogleが推奨するUIでは
+ベースのスタイルを作って使いまわせるようにしている感じがします。
 
-colorPrimary
-colorPrimaryDark
-colorAccent
+# 個人的メモ
+
+マテリアルデザインというGoogleが推奨するUIでは、選べる色に制限がありcolorPrimary、colorPrimaryDark、colorAccentの3色にするように推奨されている。
+
+[マテリアルデザインの色](https://www.materialpalette.com/colors)
