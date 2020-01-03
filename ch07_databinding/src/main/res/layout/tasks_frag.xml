@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <!-- XML上でUIの表示／非表示ができるようにする -->
+        <import type="android.view.View" />
+
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="viewmodel"
+            type="com.nakashima_hibari.learning.architecture.app.tasks.TasksViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:id="@+id/tasks_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <!--
+         View.GONE ・・・存在を消す
+         View.INVISIBLE・・・非表示
+         View.VISIBLE・・・表示
+         -->
+
+        <LinearLayout
+            android:id="@+id/tasks_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="@{viewmodel.empty ? View.GONE : View.VISIBLE}">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tasks_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:items="@{viewmodel.items}" /> <!-- app:items=はTasksListBindings.ktで拡張 -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/no_tasks_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="@{viewmodel.empty ? View.VISIBLE : View.GONE}">
+
+            <!-- ContextCompat関係でエラーがでるので除外 -->
+
+            <!--
+            <ImageView
+                android:id="@+id/no_tasks_icon"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/no_tasks_image_content_description"
+                android:src="@{ContextCompat.getDrawable(content, viewmodel.noTaskIconRes)}" />
+
+            <TextView
+                android:id="@+id/no_tasks_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/list_item_padding"
+                android:text="@{context.getString(viewmodel.noTasksLabel)}" />-->
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>
