@@ -2,7 +2,7 @@
 
 リサクラビューのサンプルアプリ
 
-![play.gif](https://github.com/nebusokuhibari/LearningArchtecture/blob/master/ch3_recyclerview/play.gif?raw=true)
+![play.gif](./play.gif?raw=true)
 
 # リサイクラビューとは
 

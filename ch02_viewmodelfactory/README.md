@@ -2,7 +2,7 @@
 
 サンプルアプリ
 
-![play.gif](https://github.com/nebusokuhibari/LearningArchtecture/blob/master/ch2_viewmodelfactory/play.gif?raw=true)
+![play.gif](./play.gif?raw=true)
 
 「編集」ボタンを押すと表示アクティビティから編集アクティビティに遷移します
 戻ると表示アクティビティにデータの変更が反映されているのが確認できます

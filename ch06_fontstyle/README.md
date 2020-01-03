@@ -1,18 +1,14 @@
-# Toolbar
+# FontStyle
 
 サンプルアプリ
 
-![play.gif](https://github.com/nebusokuhibari/LearningArchtecture/blob/master/ch4_pubsub/play.gif?raw=true)
+![play.png](./play.png?raw=true)
 
-ツールバー
-
-# Toolbarとは
+# 概要
 
 
 
 # 備忘録
-
-[公式リファレンス](https://developer.android.com/training/appbar/setting-up?hl=ja)
 
 ## 1. デフォルトのアクションバーの無効化
 
@@ -26,40 +22,55 @@
 
 初期プロジェクトだとthemeの値がstyle.xmlを参照しているので、ここをstyle.xmlを修正する
 
-## 2. mesuレイアウトの生成
+## 2. fontファイルの生成
 
-menuフォルダを生成してレイアウトxmlファイル(R.menu.tasks_fragment_menu.xml)を生成する
+fontフォルダを生成してxmlファイル(opensans_font.xml)を生成する
 
-メニュー上のアイコンはres/drawableフォルダに作る
+    <font-family xmlns:app="http://schemas.android.com/apk/res-auto">
+        <font
+            app:fontStyle="normal"
+            app:fontWeight="400"
+            app:font="@font/opensans_regular" />
+        <font
+            app:fontStyle="normal"
+            app:fontWeight="700"
+            app:font="@font/opensans_semibold" />
+    </font-family>
 
-## 3. Fragmentクラスの修正
+fontフォルダにフォントファイル（.ttf)を作成しておく必要があり。opensans_regular.ttf,opensans_semibold.ttfというファイルが必要。そのままBluePrintにあったフォントファイルを頂戴した。
 
-Fragmentに先ほど作ったレイアウトxmlを利用するようにコードを修正する。
+## 3. styles.xmlの修正
 
-    override fun onCreateView(・・・)
-                ：
-        setHasOptionsMenu(true) 
-                ：
-    }
+ファイルの中身はこんな感じ
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.tasks_fragment_menu, menu)
-    }
+    <resources xmlns:tools="http://schemas.android.com/tools">
 
-## 4. メニューバーのクリックイベントを作成
+        <!-- Base application theme. --><style name="AppTheme" parent="Base.AppTheme" />
 
-イベントに登録する処理を作成して完成。
+        <style name="AppTheme.OverlapSystemBar" parent="Base.AppTheme" />
 
-## 個人的メモ
+        <style name="Base.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <!-- For Android sdk versions 26+. -->
+            <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/opensans_font</item>
+            <!-- Target Android sdk versions < 26 and > 14. -->
+            <item name="fontFamily">@font/opensans_font</item>
+            <!-- sets the style for the overflow button -->
+            <item name="actionOverflowButtonStyle">@style/actionOverflowButtonStyle</item>
+        </style>
 
-このようにレイアウトxmlでContentCOmpatをインポートすれば、xml上でリソースファイルにアクセスできるようになる。
+        <!-- This style defines the tint color of the overflow menu button -->
+        <style name="actionOverflowButtonStyle" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+            <item name="android:tint">@color/colorAccent</item>
+        </style>
 
-    <import type="androidx.core.content.ContextCompat" />
+        <style name="Toolbar" parent="ThemeOverlay.AppCompat.Light" />
+    </resources>
 
-これを利用すれば、xml上でContextCompatクラスにアクセスできて便利
-        
-    <TextView
-            ：
-        android:src="@{ContextCompat.getDrawable(content, viewmodel.noTaskIconRes)}" /> -->
+マテリアルデザインというGoogleが推奨するUIでは
 
-それでBlueprintのサンプルではタスクが何もない時はImageViewとTextViewを表示するために使われているんだけど、自分の環境だとデータバインドの自動生成クラスが正しく出力されないみたいで、上手く行かない。原因が分からないままなので、違う方法でやってる。
+colorPrimary
+colorPrimaryDark
+colorAccent

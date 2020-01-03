@@ -2,7 +2,7 @@
 
 サンプルアプリ
 
-![play.gif](https://github.com/nebusokuhibari/LearningArchtecture/blob/master/ch4_pubsub/play.gif?raw=true)
+![play.gif](./play.gif?raw=true)
 
 タスクのチェックが変更されるとスナックバーが表示される
 

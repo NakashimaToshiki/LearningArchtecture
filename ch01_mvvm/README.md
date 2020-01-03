@@ -2,7 +2,7 @@
 
 サンプルアプリ
 
-![play.gif](https://github.com/nebusokuhibari/LearningArchtecture/blob/master/ch1_mvvm/play.gif?raw=true)
+![play.gif](./play.gif?raw=true)
 
 変更フラグメントのデータを変更すると
 表示フラグメントにデータが反映される

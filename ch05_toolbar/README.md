@@ -4,11 +4,8 @@
 
 ![play.gif](./play.gif?raw=true)
 
-ツールバー
-
-# Toolbarとは
-
-
+ツールバーの各項目をクリックするとスナックバーが表示されます。
+表示されているViewItemを変更するといった内容は実装していません。
 
 # 備忘録
 
@@ -49,17 +46,3 @@ Fragmentに先ほど作ったレイアウトxmlを利用するようにコード
 ## 4. メニューバーのクリックイベントを作成
 
 イベントに登録する処理を作成して完成。
-
-## 個人的メモ
-
-このようにレイアウトxmlでContentCOmpatをインポートすれば、xml上でリソースファイルにアクセスできるようになる。
-
-    <import type="androidx.core.content.ContextCompat" />
-
-これを利用すれば、xml上でContextCompatクラスにアクセスできて便利
-        
-    <TextView
-            ：
-        android:src="@{ContextCompat.getDrawable(content, viewmodel.noTaskIconRes)}" /> -->
-
-それでBlueprintのサンプルではタスクが何もない時はImageViewとTextViewを表示するために使われているんだけど、自分の環境だとデータバインドの自動生成クラスが正しく出力されないみたいで、上手く行かない。原因が分からないままなので、違う方法でやってる。
