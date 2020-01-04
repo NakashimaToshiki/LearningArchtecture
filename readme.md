@@ -1,8 +1,8 @@
 # Android Architecture Blueprints 学習備忘録
 
-[Android Architecture Blueprints](https://github.com/android/architecture-samples)でAndroid開発の設計手法を勉強しているのですが、様々な手法を取り入れているため、コードを読み解くのに四苦八苦。なので、手法別にプロジェクトを分けて、シンプルなサンプルを作りながら勉強しています。
+[Android Architecture Blueprints](https://github.com/android/architecture-samples)でAndroid開発の設計手法を勉強しているのですが、様々な手法を取り入れているため、コードを読み解くのに四苦八苦。学習目的でゼロベースからBlueprintのサンプルを作ろうと思います。
 
-自分と同じようにBlueprintsを読み解くのに苦労している人の助けになればと思います。
+ほとんど自分用のメモみたいなもんですが、Blueprintsを読み解くのに苦労している人の助けになればと思います。
 
 # 各サンプルの概要
 
