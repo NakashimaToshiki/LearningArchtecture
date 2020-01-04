@@ -27,7 +27,22 @@ class TasksViewModel : ViewModel() {
      * データベースからデータを取得しているという疑似的な処理
      * */
     fun loadTasks() {
-        _items.value = tasksRepository.getTasks()
+        val tasks = tasksRepository.getTasks()
+
+        val tasksToShow = ArrayList<Task>()
+        for(task in tasks){
+            when(_currentFiltering){
+                TasksFilterType.ALL_TASKS ->tasksToShow.add(task)
+                TasksFilterType.ACTIVE_TASKS -> if(task.isActive){
+                    tasksToShow.add(task)
+                }
+                TasksFilterType.COMPLETED_TASKS -> if(task.isCompleted){
+                    tasksToShow.add(task)
+                }
+            }
+        }
+
+        _items.value = ArrayList(tasksToShow)
     }
 
     /**
