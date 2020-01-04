@@ -1,14 +1,12 @@
 # DataBinding
 
-サンプルアプリ
-
 ![play.gif](./play.gif?raw=true)
 
-ツールバー
+
 
 # Todo
 
-まだ未完成。現在、詰まっている箇所
+まだ未完成。現在、詰まっている。
 
 このようにレイアウトxmlでContentCOmpatをインポートすれば、xml上でリソースファイルにアクセスできるようになる。
 
