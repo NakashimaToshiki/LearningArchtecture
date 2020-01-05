@@ -15,17 +15,20 @@
 - ch05_toolbar・・・ツールバーの作成
 - ch06_fontstyle・・・スタイルとフォントの作成
 - ch08_repository・・・コレクションの削除／抽出
+- ch09_navigation・・・ナビゲーション
 
 # Todo
 
 未完成プロジェクト一覧
 
-- ch07_databinding・・・レイアウトxml上でViewやContextCompatをインポートする
-- ch09_navigation・・・ナビゲーション
 - ch10_room・・・ROOMライブラリを使ってDMの構築
 　　　　：
 　　　　：
 - ch?_unittest・・・どこかでUnitテストを実装
+- ch?_unittest・・・どこかでandroidテストを実装
 - ch?_EspressoIdling・・・非同期なテスト
 
+保留中のプロジェクト一覧
+
+- ch07_databinding・・・レイアウトxml上でViewやContextCompatをインポートする
 
