@@ -14,13 +14,13 @@
 - ch04_pubsub・・・Pub/Subパターンでスナックバーを表示
 - ch05_toolbar・・・ツールバーの作成
 - ch06_fontstyle・・・スタイルとフォントの作成
+- ch08_repository・・・コレクションの削除／抽出
 
 # Todo
 
 未完成プロジェクト一覧
 
 - ch07_databinding・・・レイアウトxml上でViewやContextCompatをインポートする
-- ch08_repository・・・コレクションの追加／削除／抽出
 - ch09_navigation・・・ナビゲーション
 - ch10_room・・・ROOMライブラリを使ってDMの構築
 　　　　：

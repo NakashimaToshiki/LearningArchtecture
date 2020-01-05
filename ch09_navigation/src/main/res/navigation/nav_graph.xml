@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tasks_fragment_dest">
+
+    <fragment
+        android:id="@+id/task_detail_fragment_dest"
+        android:name="com.nakashima_hibari.learning.architecture.app.taskdetail.TaskDetailFragment"
+        android:label="TasksFragment" >
+        <action
+            android:id="@+id/action_task_detail_fragment_dest_to_tasks_fragment_dest"
+            app:destination="@id/tasks_fragment_dest" />
+        <action
+            android:id="@+id/action_task_detail_fragment_dest_to_add_edit_task_fragment"
+            app:destination="@id/add_edit_task_fragment" />
+        <argument
+            android:name="taskId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/statistics_fragment"
+        android:name="com.nakashima_hibari.learning.architecture.app.statistics.StatisticsFragment"
+        android:label="StatisticsFragment">
+        <action
+            android:id="@+id/action_statistics_fragment_to_tasks_fragment_dest"
+            app:destination="@id/tasks_fragment_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasks_fragment_dest"
+        android:name="com.nakashima_hibari.learning.architecture.app.tasks.TasksFragment"
+        android:label="TasksFragment">
+        <action
+            android:id="@+id/action_tasks_fragment_dest_to_task_detail_fragment_dest"
+            app:destination="@id/task_detail_fragment_dest" />
+        <action
+            android:id="@+id/action_tasks_fragment_dest_to_statistics_fragment"
+            app:destination="@id/statistics_fragment" />
+        <action
+            android:id="@+id/action_tasks_fragment_dest_to_add_edit_task_fragment"
+            app:destination="@id/add_edit_task_fragment" />
+        <argument
+            android:name="userMessage"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_edit_task_fragment"
+        android:name="com.nakashima_hibari.learning.architecture.app.addedittask.AddEditTaskFragment"
+        android:label="AddEditTaskFragment">
+        <action
+            android:id="@+id/action_add_edit_task_fragment_to_tasks_fragment_dest"
+            app:destination="@id/tasks_fragment_dest" />
+        <argument
+            android:name="taskId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+</navigation>
