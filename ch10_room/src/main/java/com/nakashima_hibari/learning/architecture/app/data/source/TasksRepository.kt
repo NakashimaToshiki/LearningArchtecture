@@ -1,7 +1,7 @@
 package com.nakashima_hibari.learning.architecture.app.data.source
 
-import com.nakashima_hibari.learning.architecture.app.data.Task
 import com.nakashima_hibari.learning.architecture.app.data.Result
+import com.nakashima_hibari.learning.architecture.app.data.Task
 
 interface TasksRepository {
 

@@ -3,10 +3,6 @@ package com.nakashima_hibari.learning.architecture.app.data.source
 import com.nakashima_hibari.learning.architecture.app.data.Result
 import com.nakashima_hibari.learning.architecture.app.data.Task
 
-
-/**
- * Main entry point for accessing tasks data.
- */
 interface TasksDataSource {
 
     suspend fun getTasks(): Result<List<Task>>

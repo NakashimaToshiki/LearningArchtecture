@@ -3,9 +3,7 @@ package com.nakashima_hibari.learning.architecture.app.data.source.local
 import androidx.room.*
 import com.nakashima_hibari.learning.architecture.app.data.Task
 
-/**
- * Data Access Object for the tasks table.
- */
+
 @Dao
 interface TasksDao {
 

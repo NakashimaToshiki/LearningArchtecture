@@ -1,17 +1,13 @@
 package com.nakashima_hibari.learning.architecture.app.data.source.local
 
-import com.nakashima_hibari.learning.architecture.app.data.Task
-import com.nakashima_hibari.learning.architecture.app.data.source.TasksDataSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import com.nakashima_hibari.learning.architecture.app.data.Result
 import com.nakashima_hibari.learning.architecture.app.data.Result.Success
 import com.nakashima_hibari.learning.architecture.app.data.Result.Error
-import com.nakashima_hibari.learning.architecture.app.data.Result
-
-/**
- * Concrete implementation of a data source as a db.
- */
+import com.nakashima_hibari.learning.architecture.app.data.Task
+import com.nakashima_hibari.learning.architecture.app.data.source.TasksDataSource
 
 class TasksLocalDataSource internal constructor(
     private val tasksDao: TasksDao,
